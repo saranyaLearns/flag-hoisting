@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #706fd3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 420px;
+    width: 350px;
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    position: relative;
+}
+.base{
+    height: 20px;
+    width: 80px;
+    background-color: brown;
+    position: relative;
+}
+.base::before{
+    content: '';
+    height: 20px;
+    width: 60px;
+    background-color: brown;
+    margin-top: -20px;
+    margin-left: 10px;
+    position: absolute;
+}
+.stemp{
+    height: 280px;
+    width: 5px;
+    background-color: brown;
+    position: absolute;
+    margin-bottom: 40px;
+    
+}
+.knot{
+    height: 235px;
+    width: 5px;
+    background-color: transparent;
+    
+    border-right: 1px solid red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    position: absolute;
+    margin-bottom: 60px;
+    margin-left: 10px;
+}
+.stemp::before{
+    content: '';
+    height: 10px;
+    width: 12px;
+    background-color: brown;
+    margin-left: -3px;
+    position: absolute;
+    border-radius: 5px;
+}
+.flag{
+    height: 80px;
+    width: 120px;
+    background-color: transparent;
+    position: absolute;
+    margin-right: -135px;
+    margin-bottom: 120px;
+
+    animation-name: move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.orange{
+    height: 26px;
+    width: 28px;
+    background-color: orange;
+
+    animation-name: sizer;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.white{
+    height: 29px;
+    width: 28px;
+    background-color: white;
+    
+    animation-name: sizer;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.ashok-chakra{
+    height: 29px;
+    width: 30px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid blue;
+    margin-left: 1px;
+
+
+    animation-name: chakra;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.line{
+   
+}
+.line1{
+    height: 2px;
+    width: 28px;
+    background-color: blue;
+    margin-top: 10px;
+}
+.line2{
+    height: 2px;
+    width: 28px;
+    background-color: blue;
+    transform: rotate(90deg);
+}
+.line3{
+    height: 2px;
+    width: 28px;
+    background-color: blue;
+    margin-top: -1px;
+    transform: rotate(-60deg);
+}
+.line4{
+    height: 2px;
+    width: 28px;
+    background-color: blue;
+    margin-top: -5px;
+    transform: rotate(45deg);
+}
+.green{
+    height: 26px;
+    width: 28px;
+    background-color: green;
+    
+    animation-name: sizer;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes move{
+    from{
+        margin-bottom: 150px;
+    }
+    to{
+        margin-bottom: 210px;
+    } 
+}
+
+@keyframes sizer{
+    from{
+        width: 20px;
+    }
+    to{
+        width: 120px;
+    }
+}
+
+@keyframes chakra{
+    from{
+        margin-left: 5px;
+    }
+    to{
+        margin-left: 40px;
+    }
+}
+audio{
+    position: absolute;
+    margin-bottom: 330px;
+}
